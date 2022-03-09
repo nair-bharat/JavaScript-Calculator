@@ -6,8 +6,14 @@
         </title>
     </head>
     <body>
-        <input type="text" class="display" value="0" disabled />
-        <div class="keys">
+        <div>
+            <input type="text" class="display" value="0" onclick="add();" />
+        </div>
+        <div id="op" class="keys">
+
+            <div class = "clearscreen">
+                <button type="button" class="operatorClear" value="clear">AC</button>
+            </div>
             <button type="button" class="operator" value="7">7</button>
             <button type="button" class="operator" value="8">8</button>
             <button type="button" class="operator" value="9">9</button>
@@ -26,9 +32,9 @@
             <button type="button" class="operator" value="0">0</button>
             <button type="button" class="operator" value=".">.</button>
             <button type="button" class="operator" value="/">/</button>
-            <button type="button" class="operator" value="=">=</button>
+            <button type="button" class="operatorEquals" value="=">=</button>
 
-            <button type="button" class="operator" value="clear">AC</button>
+            
         </div>
         <script src="index.js"></script>
     </body>
