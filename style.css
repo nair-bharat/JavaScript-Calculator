@@ -1,64 +1,46 @@
-.display {
-    background-color: aqua;
-    width: 17em;
-    border: 0.1em solid green;
-    height: 3em;
-    margin: 5em;
-    text-align: right;
-    font-weight: bolder;
-    font-size: 1em;
-  }
+input {
+  text-align: right;
+  font-size: 45px;
+  width: 342px;
+  height: 70px;
+  border-radius: 15px;
+  border: 3px solid rgb(185, 184, 184);
+  background-color: rgb(202, 223, 216);
+  font-family: 'Orbitron', sans-serif;
+}
 
-  .keys {
-    width: 17em;
-    border: 0.25em solid black;
-    height: 20em;
-    margin: 5em;
-    vertical-align: middle;
-    border-width: 0.05em;
-    text-align: center;
-    border: 0.25em solid aqua;
-  }
+.shade2 {
+  background-color: rgb(255, 178, 34);
+  color: white;
+}
 
-  .clearscreen {
-    
-    text-align: right;
-  }
+.container {
+  text-align: center;
+}
 
+table {
+  margin: auto;
+}
 
-  .operator {
-    width: 4em;
-    height: 4em;
-    border-radius: 50%;
-    font-size: 1em;
-    font-weight: bolder;
-    border-width: 0.05em;
-    border-color: aqua;
-    color: red;
-  }
+button {
+  font-size: 30px;
+  background-color: rgb(245, 240, 240);
+  font-weight: 900;
+  width: 85px;
+  height: 60px;
+  border-radius: 15px;
+  border-color: gray;
+  margin: 2px;
+}
 
-  .operatorEquals {
+.calculator {
+  display: inline-block;
+  padding: 20px;
+  background-color: rgb(85, 79, 79);
+  border-radius: 30px;
+  padding-top: 30px;
+}
 
-    background-color: rgb(20, 168, 218);
-      width: 4em;
-      height: 4em;
-      border-radius: 50%;
-      font-size: 1em;
-      font-weight: bolder;
-      border-width: 0.05em;
-      border-color: white;
-      color: white;
-  }
-
-  .operatorClear {
-
-    background-color: rgb(235, 81, 61);
-      width: 4em;
-      height: 4em;
-      border-radius: 50%;
-      font-size: 1em;
-      font-weight: bolder;
-      border-width: 0.05em;
-      border-color: white;
-      color: white;
-  }
+.keypad {
+  padding-top: 15px;
+}

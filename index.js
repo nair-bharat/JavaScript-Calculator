@@ -1,8 +1,33 @@
-function add()
-    {
-        var my_input1 = document.getElementById('op').value;
-        var my_input2 = document.getElementById('op').value;
+let screen = document.getElementById('screen');
+buttons = document.querySelectorAll('button');
+let screenValue = '';
+for(item of buttons) {
+    item.addEventListener('click', (event) => {
+        buttonText = event.target.innerText;
 
-        var sum = parseInt(my_input1) + parseInt(my_input2);
-        document.write(sum);
-    }
+        if (buttonText == 'AC') {
+            screenValue = '';
+            screen.value = screenValue;
+        }
+
+        else if (buttonText == '=') {
+            screen.value = eval(screenValue);
+            screenValue = screen.value;
+        }
+
+        else if (buttonText == 'C') {
+            screenValue = screen.value.substr(0, screen.value.length - 1);
+            screen.value = screenValue;
+        }
+
+        else if (buttonText == 'sqrt') {
+            screenValue = Math.sqrt(screen.value);
+            screen.value = screenValue;
+        }
+
+        else {
+            screenValue += buttonText;
+            screen.value = screenValue;
+        }
+    })
+}
